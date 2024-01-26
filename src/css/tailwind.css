@@ -21,7 +21,7 @@
         @apply  text-[#39BAAB] rounded-md p-2 bg-[#f4faff] shadow-lg shadow-[#b7f5ee]
     }
     .btn-back {
-        @apply rounded-md p-2 bg-[#f4faff] shadow-lg shadow-[#FFCDD1]
+        @apply rounded-md p-2 bg-[#f4faff] shadow-sm shadow-[#FFCDD1]
     }
     .btn-deconnexion {
         @apply rounded-md bg-[#f4faff] shadow-lg shadow-[#FFCDD1] px-12 py-3 text-[#9B000C]
@@ -36,11 +36,9 @@
         }
     /* DROPDOWN========================================================= */
     .dropdown {
-        @apply text-[#00619E] rounded-md  px-6 py-2 bg-[#FAFDFF] shadow-lg shadow-[#E7F8F6] hover:font-semibold 
+        @apply text-[#00619E] rounded-md  px-6 py-[0.7rem] mr-2 bg-[#FAFDFF] 
     }
-    .dropdown-content {
-        @apply  rounded-md  px-4 py-2 bg-[#FAFDFF] shadow-lg shadow-[#E7F8F6] hover:font-semibold 
-    }
+
 
     
     /* CARD ADMIN========================================================= */

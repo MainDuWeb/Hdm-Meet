@@ -37,15 +37,22 @@
             <ul class="flex pt-4">
                 <li class="pr-4"><input class="formulaire-admin " type="email" placeholder="Entrez votre email"></li>
                 <li class="pr-4"><input class="formulaire-admin " type="password" placeholder="Mot de passe"></li>
-                <li class="pr-4 "> 
+                <li class="pr-2 "> 
                     
-                    <ul id="dropdown-js" class="absolute">
+                    <!-- <ul id="dropdown-js" class="absolute">
                         <li class="dropdown"> <a class="" href="#"> Rôle</a></li>
                         <li class="hidden dropdown-content text-[#00619E] hover:bg-[#00619E] hover:text-[#f4faff]"> <a href="#"> User </a></li>
                         <li class="hidden dropdown-content text-[#299948] hover:bg-[#00619E] hover:text-[#f4faff]"> <a href="#"> Admin</a></li>
-                    </ul> 
+                    </ul>  -->
+                
+                    <select name="Rôle" id="role" class="dropdown">
+                        <option class="" value="user">User</option>
+                        <option class="" value="admin">Admin</option>
+                      </select>
+
+                
                 </li>
-                <li class="pl-24 pt-2"><a class="btn-primary" href="#"> Ajouter</a></li>
+                <li class="pr-8 pt-2"><a class="btn-primary" href="#"> Ajouter</a></li>
             </ul>
         </section>
 
