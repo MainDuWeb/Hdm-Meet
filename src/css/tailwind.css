@@ -1,0 +1,66 @@
+@tailwind base; 
+@tailwind components;
+
+
+.incline-section {
+    clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+}
+@tailwind utilities;
+
+
+@layer base{
+
+}
+@layer components{
+
+/* BOUTTON========================================================= */
+    .btn-primary {
+        @apply bg-[#39BAAB] rounded-md text-[#f4faff] px-12 py-3
+    }
+    .btn-secondary {
+        @apply  text-[#39BAAB] rounded-md p-2 bg-[#f4faff] shadow-lg shadow-[#b7f5ee]
+    }
+    .btn-back {
+        @apply rounded-md p-2 bg-[#f4faff] shadow-lg shadow-[#FFCDD1]
+    }
+    .btn-deconnexion {
+        @apply rounded-md bg-[#f4faff] shadow-lg shadow-[#FFCDD1] px-12 py-3 text-[#9B000C]
+    }
+
+/* FORMULAIRE =========================================================  */
+    .formulaire {
+    @apply bg-[#FAFDFF] border-[0.5px] border-[#9AC3ED] py-1 px-10 text-xl  rounded-md text-[#162D4E] focus:ring-sky-100
+    }
+    .formulaire-admin {
+        @apply bg-[#FAFDFF] border-[0.5px] border-[#d8eafc] py-2 px-10 text-base rounded-md text-[#162D4E] focus:ring-sky-100
+        }
+    /* DROPDOWN========================================================= */
+    .dropdown {
+        @apply text-[#00619E] rounded-md  px-6 py-2 bg-[#FAFDFF] shadow-lg shadow-[#E7F8F6] hover:font-semibold 
+    }
+    .dropdown-content {
+        @apply  rounded-md  px-4 py-2 bg-[#FAFDFF] shadow-lg shadow-[#E7F8F6] hover:font-semibold 
+    }
+
+    
+    /* CARD ADMIN========================================================= */
+    .card-admin{
+        @apply bg-[#46667B] text-[#f4faff] rounded-md pb-4
+
+    }
+
+    .btn-card-modifier {
+        @apply  rounded-md bg-[#f4faff]  px-12 py-3 text-[#46667B]
+    }
+    
+    .btn-card-supprimer {
+        @apply bg-[#9B000C] rounded-md py-3 px-10 ml-6
+    }
+
+/* CARD ADMIN========================================================= */
+        .card-user{
+            @apply bg-[#D1E5F2] text-[#46667B] rounded-md  
+        }
+    }
+
+
