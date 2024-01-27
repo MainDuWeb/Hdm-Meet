@@ -36,7 +36,7 @@
         }
     /* DROPDOWN========================================================= */
     .dropdown {
-        @apply text-[#00619E] rounded-md  px-6 py-[0.7rem] mr-2 bg-[#FAFDFF] 
+        @apply text-[#00619E] rounded-md  px-6 py-[0.7rem] m-2 bg-[#FAFDFF] 
     }
 
 

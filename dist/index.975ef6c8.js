@@ -579,12 +579,6 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"8lqZg":[function(require,module,exports) {
-document.getElementById("dropdown-js").addEventListener("click", function() {
-    var dropdownContent = this.querySelectorAll(".dropdown-content");
-    dropdownContent.forEach(function(content) {
-        content.classList.toggle("hidden");
-    });
-});
 
 },{}]},["4rkIz","8lqZg"], "8lqZg", "parcelRequire5c49")
 
