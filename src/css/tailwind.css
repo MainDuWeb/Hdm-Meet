@@ -27,6 +27,10 @@
         @apply rounded-md bg-[#f4faff] shadow-lg shadow-[#FFCDD1] px-12 py-3 text-[#9B000C]
     }
 
+    .btn-visio-1 {
+        @apply text-center text-[#39BAAB] rounded-md p-2 bg-white  border border-[#d5f3ef]
+    }
+
 /* FORMULAIRE =========================================================  */
     .formulaire {
     @apply bg-[#FAFDFF] border-[0.5px] border-[#9AC3ED] py-1 px-10 text-xl  rounded-md text-[#162D4E] focus:ring-sky-100
@@ -59,6 +63,18 @@
         .card-user{
             @apply bg-[#D1E5F2] text-[#46667B] rounded-md  
         }
+
+/* NAV BAR VISIO========================================================= */
+        .navbar-visio {
+            @apply mx-12 mt-2 bg-[#46667B] text-white rounded-lg
+        }
+        .btn-viso {
+            @apply m-1 px-4 py-1 rounded-lg hover:bg-[#39BAAB] 
+        }
+
+
+
+
     }
 
 
