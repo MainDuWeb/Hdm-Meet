@@ -1,0 +1,510 @@
+:root {
+    --main-color: #f4faff;
+    --color-red: #9B000C;
+    --color-turquoise: #39BAAB;
+}
+
+@keyframes pulse {
+    60% {
+        opacity: .7;
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+    color: #162D4E;
+    /* Utilisez la variation de police Bespoke Stencil que vous préférez ici */
+}
+
+/* Accueil====================================================== */
+.grid-accueil {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    color: #162D4E
+}
+
+.section-logo {
+    background-color: #00619E;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+    overflow: hidden;
+}
+
+.div-logo {
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.logo-accueil {
+    margin-right: 2rem
+        /* 16px */
+    ;
+    max-width: 20rem;
+}
+
+.citation-logo-accueil {
+    color: var(--main-color);
+    margin-top: .5em;
+    margin-left: 9rem;
+    font-size: 0.75rem;
+}
+
+.nav-acceuil {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1.5rem 3.5rem 0 1.5rem;
+}
+
+.btn-connexion-admin {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    color: #00619E;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    background-color: #d9edfa;
+    border-radius: 0.625rem;
+    box-shadow: 1px 1px 1px 1px #d2ecfc;
+}
+
+.espace-accueil{
+   margin-top: 11.5rem;
+    
+}
+.titre-accueil {
+    color: #162D4E;
+    margin-bottom: 0;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+}
+
+.sous-titre-acceuil {
+    color: #162D4E;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.div-btn {
+    padding-top: 2rem;
+}
+
+.btn-connexion {
+    padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    color: var(--main-color);
+    border-radius: 0.625rem;
+    background-color: var(--color-turquoise);
+    text-decoration: none;
+}
+
+/* Admin connexion====================================================== */
+.btn-back {
+    color: var(--main-color);
+    background-color: var(--color-red); 
+    padding: .4em;
+    border-radius: 0.625rem;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.espaceur{
+    margin-top: 10em;
+}
+
+.form {
+    list-style-type: none;
+    list-style-position: outside;
+    padding-left: 0;
+}
+
+.form-admnin {
+    padding-top: .5rem;
+
+}
+
+.formulaire {
+    border: solid .5px #9AC3ED;
+    border-radius: 0.625rem;
+    color: #2e5996;
+    padding: 0.25rem 2.5rem 0.25rem 2.5rem;
+    font-size: 1.25rem
+        /* 20px */
+    ;
+    line-height: 1.25rem
+        /* 28px */
+    ;
+
+}
+
+.form .formulaire::placeholder {
+    color: #0D3A69;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+
+}
+
+/* Administration ====================================================== */
+
+
+.nav-administration {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+}
+
+.ul-nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-top: 4em;
+    padding-right: 3em;
+}
+
+.nav-admin-icone {
+    padding-right: .5em;
+}
+
+.nav-admin-user {
+    font-size: large;
+    padding: 0 2em 0 0;
+}
+
+.nav-admin-btn {
+    color: var(--main-color);
+    text-decoration: none;
+    background-color: var(--color-red);
+    border-radius: 0.625rem;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    padding: 0.5em 1.5em;
+    box-shadow: 1px 1px 1px 1px #d2ecfc;
+}
+
+main {
+    margin: 0 2em 0 2em;
+}
+
+.titre-admin {
+    font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+    color: var(--main-color);
+}
+
+.ajout {
+    background-color: #46667B;
+    width: fit-content;
+    border-radius: 0.625rem;
+    padding: 1em 2em 1em 2em;
+    margin-left: 2em;
+
+
+}
+
+.form-ajout {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+
+}
+
+.form-ajout-email,
+.form-ajout-password {
+    border: solid .5px #9AC3ED;
+    border-radius: 0.625rem;
+    box-shadow: inset .07em .07em rgba(0, 97, 158, 0.25);
+    color: #2e5996;
+    padding: 0.25rem 2rem 0.25rem 2rem;
+    font-size: 1.25rem;
+
+}
+
+.form-ajout-email::placeholder,
+.form-ajout-password::placeholder {
+    color: #0D3A69;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.form-item-1,
+.form-item-2,
+.form-item-3 {
+    padding-right: 1em;
+
+}
+
+.form-item-4 {
+    padding-left: 1em;
+    padding-top: 0.3em;
+
+}
+
+.dropdown-user {
+    color: #00619E;
+    text-decoration: none;
+    background-color: #FAFDFF;
+    border: #FAFDFF;
+    border-radius: 0.625rem;
+    padding: 0.5em 1.5em;
+
+    font-size: 0.9rem;
+}
+
+.btn-ajouter {
+    color: #FAFDFF;
+    text-decoration: none;
+    background-color: #39BAAB;
+    border-radius: 0.625rem;
+    padding: 0.5em 1.5em;
+}
+
+.new-user {
+    font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+    color: #FAFDFF;
+}
+
+.titre-admin,
+.titre-user {
+    font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+    color: #0D3A69;
+}
+
+.section-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    margin-top: 4em;
+
+}
+
+.colonne-admin {
+    grid-column: 1;
+    grid-row-gap: 1em;
+}
+
+.colonne-user {
+    grid-column: 2;
+    grid-gap: 1em;
+}
+
+.double-colonne {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.card {
+    border-radius: 0.625rem;
+    padding: .1em 5.5em 1em 2em;
+}
+
+.card-admin {
+    background-color: #46667B;
+    margin-bottom: 1em;
+    color: #FAFDFF;
+}
+
+.card-admin-admin {
+    height: fit-content;
+}
+
+.card-user {
+    background-color: #D1E5F2;
+    color: #46667B;
+}
+
+.card-email {
+    margin: 1em 0 0 0;
+
+}
+
+.btn-card {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.btn-card-modifier {
+    text-decoration: none;
+    background-color: #FAFDFF;
+    border-radius: 0.625rem;
+    padding: 0.75em 4em;
+    color: #46667B;
+}
+
+.btn-card-supprimer {
+    text-decoration: none;
+    background-color: var(--color-red);
+    border-radius: 0.625rem;
+    padding: 0.75em 3em;
+    margin-left: 1em;
+    color: #FAFDFF
+}
+
+.date-status {
+    list-style-type: none;
+    padding-left: 0;
+    display: block flex;
+    padding: 1em 0 1em 0;
+}
+
+.status-admin {
+    margin: 0;
+    padding: 0 2em 0 4em;
+}
+
+/* User connexion ====================================================== */
+
+.user-container{
+    display: flex;
+    margin: 3em ;
+}
+
+.camera{
+    width: 40em;
+    height: 25em;
+    background-color: #46667B;
+    margin-right: 4em ; 
+    border-radius: 0.625rem;;
+}
+
+.user-content{
+    margin-top: 2em;
+}
+
+/* Visio-conférence ====================================================== */
+
+.petit-logo{
+    width: 3em;
+}
+
+.fenetre-visio{
+    max-width: 1800px;
+    width: 100%;
+    height: 32em;
+    margin:  auto;
+    background-color: #46667B;
+    border-radius: 0.625rem;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, 10em);
+    grid-gap: .5em;
+    justify-content: center;
+}
+
+.card-visio{
+    border-radius: 0.625rem;
+    background-color: #D1E5F2;
+    width: 10em;
+    height: 8.5em;
+   
+}
+
+.user-etat{
+    display: flex;
+    list-style-type: none;
+    padding-left: 1em;
+    margin: 0; 
+}
+
+.visio-micro {
+    padding-right: 0.5em;
+}
+.visio-person {
+    height: 7em;
+    background-color: #9AC3ED;
+    margin-left:0.5;
+    margin-right: 0.5;
+    border-radius: 0.625rem 0.625rem 0 0 ;
+    
+}
+
+
+/* Visio-conférence - footer ====================================================== */
+.visio-container{
+    display: flex;
+    background-color: #46667B;
+    border-radius: 0.625rem;
+    margin: 0.75em 2em ; 
+}
+
+.font-semibold{
+    font-weight: 600;
+    height: fit-content;
+    margin: 0;
+    
+
+}
+.visio{
+    list-style: none;
+    margin: 0.25em 2em ; 
+    padding: 1rem 0.25rem .5rem 0.25rem;
+    height: fit-content;
+    background-color: #46667B; 
+    
+    border-radius: 0.625rem;
+}
+.btn-visio{
+    text-decoration: none;
+    padding-top:0.75rem;
+    padding-bottom:0.75rem ;
+    list-style: none;
+    color: var(--main-color); 
+}
+
+@media (hover: hover) {
+    .visio:hover {
+      background: #39BAAB;
+    }
+  }
+  
+.visio-icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.visio-text{
+    padding:0.75em 0 0 0;
+    margin:0;
+}
+
+.participant{
+    padding: 0.75rem 0.25rem .37rem 0.25rem;
+}
+
+.btn-visio-participant{
+    text-decoration: none;
+    padding-bottom: 0;
+    color: var(--main-color); 
+}
+
+.visio-text-participant{
+    padding-top: 0;
+    margin:0;
+}
+.visio-icone-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deconnexion{
+    padding-top: 1.5em;
+}
+.visio-deconnexion{
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: var(--color-red); 
+    border-radius: 0.625rem;
+    padding: 1.2rem 0.75rem 1rem 0.75rem ;
+
+}

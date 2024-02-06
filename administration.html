@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font-bespoke -->
+    <link rel="stylesheet" href="/doc/fonts/bespoke-stencil.css">
+
+    <!-- CDN icone -->
+    <script src="https://kit.fontawesome.com/90363de2b4.js" crossorigin="anonymous"></script>
+
+    <!-- ma feuille de style -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>HDM Meet || Administration</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-administration">
+            <h1 class=""> <img class="" src="/doc/img/little_logo_blue.svg" alt="HDM Meet" title="HDM Meet"> </h1>
+
+            <ul class="ul-nav">
+                <li class="nav-admin-icone"> <i class="fa-regular fa-user fa-lg"></i> </li>
+                <li class="nav-admin-user"> administrateur@hotmail.com</li>
+                <li class=""> <a class="nav-admin-btn" href="index.html"> Déconnexion </a></li>
+            </ul>
+        </nav>
+
+        <!-- SECTION AJOUT D'UTILISATEUR ============================= -->
+        <section class="ajout">
+            
+                <h2 class="new-user"> Ajouter un(e) nouvel(le) utilisateur(trice) </h2>
+            
+
+            <ul class="form-ajout">
+
+                <li class="form-item-1">
+                    <input class="form-ajout-email" 
+                            type="email" 
+                            placeholder="Email">
+                </li>
+
+                <li class="form-item-2">
+                    <input class="form-ajout-password" 
+                            type="password" 
+                            placeholder="Mot de passe">
+                </li>
+
+                <li class="form-item-3">
+                    <select name="Rôle" id="role" class="dropdown-user">
+                        <option class="" value="user">User</option>
+                        <option class="" value="admin">Admin</option>
+                    </select>
+                </li>
+
+                <li class="form-item-4">
+                    <a class="btn-ajouter" href="#"> Ajouter
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        
+
+
+<!-- SECTION CARD  ============================= -->
+        <section class=" section-card ">
+
+    <!--ADMIN  ============================= -->
+                <div class="colonne-admin">
+                    <header class="titre-admin">
+                        <h2>Administrateurs(trices)</h2>
+                    </header>
+
+                    <!-- CARD ADMINISTRATEUR 1 ============================= -->
+                    <div class=" card card-admin">
+                        <article class=" card-admin-admin ">
+                            <h3 class=" card-email "> Administrateur@hotmail.com </h3>
+
+                            <ul class="date-status">
+                                <li><time datetime="2024-11-24">24/11/24</time></li>
+                                <li>
+                                    <h4 class="status-admin"> Admin</h4>
+                                </li>
+                            </ul>
+
+                            <ul class="btn-card">
+                                <li class="">
+                                    <a class="btn-card-modifier" href="#">Modifier
+                                    </a>
+                                </li>
+                                
+                                <li class="">
+                                    <a href="#" class="btn-card-supprimer">
+                                        <i class="fa-regular fa-trash-can fa-lg text-white"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </article>
+                    </div>
+
+                </div>
+
+    <!-- UTILISATREUR  ============================= -->
+                <div class="">
+
+                    <header class="titre-user">
+                        <h2>Utilisateurs(trices)</h2>
+                    </header>
+                    
+                     <!--DIV GRID============================= -->
+                    <div class="double-colonne">
+
+                        <!-- CARD UTILISATEURS 1 ============================= -->
+                        <div class=" card card-user">
+                            <article class="card-user pb-4 ">
+                                <h3> Utilisateur1@hotmail.com </h3>
+
+                                <ul class="date-status">
+                                    <li><time datetime="2024-11-24">24/11/24</time></li>
+                                    <li>
+                                        <h4 class="status-admin"> Admin</h4>
+                                    </li>
+                                </ul>
+
+                                <ul class="btn-card">
+                                    <li>
+                                        <a class="btn-card-modifier" 
+                                           href="#">Modifier
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="#" class="btn-card-supprimer">
+                                            <i class="fa-regular fa-trash-can fa-lg text-white"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                            </article>
+                        </div>
+                        <!-- ====== -->
+
+                        <!-- CARD UTILISATEURS 2============================= -->
+                        <div class=" card card-user">
+                            <article class="card-user">
+                                <h3 class=""> Utilisateur2@hotmail.com </h3>
+
+                                <ul class="date-status">
+                                    <li><time datetime="2024-11-24">24/11/24</time></li>
+                                    <li>
+                                        <h4 class="status-admin"> Admin</h4>
+                                    </li>
+                                </ul>
+
+                                <ul class="btn-card">
+                                    <li class="">
+                                        <a class="btn-card-modifier" href="#">Modifier
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="#" class="btn-card-supprimer">
+                                            <i class="fa-regular fa-trash-can fa-lg text-white"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <!-- ====== -->
+
+                    </div>
+                    <!-- ====== -->
+                </div>
+           
+
+        </section>
+    </main>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
