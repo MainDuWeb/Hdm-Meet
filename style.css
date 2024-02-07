@@ -2,6 +2,7 @@
     --main-color: #f4faff;
     --color-red: #9B000C;
     --color-turquoise: #39BAAB;
+    --color-modal: rgba(70, 102, 123, 0.5);
 }
 
 @keyframes pulse {
@@ -9,6 +10,7 @@
         opacity: .7;
     }
 }
+
 
 
 body {
@@ -69,6 +71,7 @@ body {
     background-color: #d9edfa;
     border-radius: 0.625rem;
     box-shadow: 1px 1px 1px 1px #d2ecfc;
+    cursor: pointer;
 }
 
 .espace-accueil{
@@ -102,6 +105,7 @@ body {
     border-radius: 0.625rem;
     background-color: var(--color-turquoise);
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* Admin connexion====================================================== */
@@ -111,6 +115,7 @@ body {
     padding: .4em;
     border-radius: 0.625rem;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    cursor: pointer;
 }
 
 .espaceur{
@@ -265,6 +270,7 @@ main {
     background-color: #39BAAB;
     border-radius: 0.625rem;
     padding: 0.5em 1.5em;
+    cursor: pointer;
 }
 
 .new-user {
@@ -339,6 +345,7 @@ main {
     border-radius: 0.625rem;
     padding: 0.75em 4em;
     color: #46667B;
+    cursor: pointer;
 }
 
 .btn-card-supprimer {
@@ -347,7 +354,8 @@ main {
     border-radius: 0.625rem;
     padding: 0.75em 3em;
     margin-left: 1em;
-    color: #FAFDFF
+    color: #FAFDFF;
+    cursor: pointer;
 }
 
 .date-status {
@@ -458,6 +466,7 @@ main {
     padding-bottom:0.75rem ;
     list-style: none;
     color: var(--main-color); 
+    cursor: pointer;
 }
 
 @media (hover: hover) {
@@ -485,6 +494,7 @@ main {
     text-decoration: none;
     padding-bottom: 0;
     color: var(--main-color); 
+    cursor: pointer;
 }
 
 .visio-text-participant{
@@ -508,3 +518,94 @@ main {
     padding: 1.2rem 0.75rem 1rem 0.75rem ;
 
 }
+/* MODAL BOX ================================= */
+
+/* .modal-btn {
+    padding: 10px 14px;
+    font-size: 18px;
+    margin: 100px auto;
+    display: block;
+    min-width: 150px;
+    cursor: pointer;
+  } */
+  
+  .modal-container {
+    /* display: none; */
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+  }
+  .modal-container.active {
+     
+    visibility: visible;
+  }
+  
+  .overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--color-modal);
+    transition: opacity 0.4s 0.2s ease-out;
+  }
+  .modal-container.active .overlay {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+  }
+  
+  .modal {
+    opacity: 0;
+    width: 95%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 50px));
+    transition: opacity 0.4s ease-out,
+    transform 0.4s ease-out;
+  }
+  
+  /* .modal-container.active .modal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s 0.2s ease-out,
+    transform 0.4s 0.2s ease-out;
+  } */
+
+  .modal-container.active .modal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+  
+  .close-modal {
+    /* padding: 8px 10px; */
+    border: none;
+    /* border-radius: 5px; */
+    /* font-size: 18px; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    /* background: #ff365e; */
+    color: var(--color-red);
+  }
+  .modal h3 {
+    color: #162D4E;
+    margin-bottom: 10px;
+    font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  .modal p {
+    color: #162D4E;
+    line-height: 1.4;
+    margin-bottom: 1em;
+  }
