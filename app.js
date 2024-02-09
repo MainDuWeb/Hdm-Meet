@@ -63,3 +63,4 @@ setupModal(".modifier-container-user", ".modal-trigger-modifier-user");
 // Modal Supprimer un Utilisateur
 setupModal(".supprimer-container-user", ".modal-trigger-supprimer-user");
 
+

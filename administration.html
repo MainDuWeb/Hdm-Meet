@@ -25,82 +25,78 @@
 </head>
 
 <body>
+<!-- DIV MODAL  =============== -->
+    <div>
+        <!-- MODAL AJOUTER UN UTILISATEUR =============== -->
+        <div class="modal-container">
+            <div class="overlay modal-trigger-ajouter"></div>
+            <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+                <a aria-label="close modal" class="close-modal modal-trigger-ajouter">
+                    <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
+                </a>
+                <h3 id="modalTitle">Voulez-vous ajouter cet utilisateur?</h3>
+                <p id="dialogDesc"> Utilisateur@gmail.com </p>
 
-    <!-- MODAL AJOUTER UN UTILISATEUR OK =============== -->
-    <div class="modal-container">
-        <div class="overlay modal-trigger-ajouter"></div>
-        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
-            <a aria-label="close modal" class="close-modal modal-trigger-ajouter">
-                <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
-            </a>
-            <h3 id="modalTitle">Voulez-vous ajouter cet utilisateur?</h3>
-            <p id="dialogDesc"> Utilisateur@gmail.com </p>
-
-            <button class="btn-ajouter"> Comfirmer </button>
+                <button class="btn-ajouter"> Comfirmer </button>
+            </div>
         </div>
-    </div>
 
-
-
-    <!-- MODAL MODIFIER UN ADMINISTRATEUR OK =============== -->
-    <div class="modal-container modifier-container">
-        <div class="overlay modal-trigger-modifier"></div>
-        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
-            <a aria-label="close modal" class="close-modal modal-trigger-modifier">
-                <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
-            </a>
-            <h3 id="modalTitleModifier">Modifier l'utilisateur?</h3>
-            <p id="dialogDescModifier">Utilisateur@gmail.com</p>
-            <button class="btn-modifier">Confirmer</button>
+        <!-- MODAL MODIFIER UN ADMINISTRATEUR =============== -->
+        <div class="modal-container modifier-container">
+            <div class="overlay modal-trigger-modifier"></div>
+            <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+                <a aria-label="close modal" class="close-modal modal-trigger-modifier">
+                    <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
+                </a>
+                <h3 id="modalTitleModifier">Modifier l'utilisateur?</h3>
+                <p id="dialogDescModifier">Utilisateur@gmail.com</p>
+                <button class="btn-ajouter">Confirmer</button>
+            </div>
         </div>
-    </div>
 
+        <!-- MODAL SUPP UN ADMINISTRATEUR =============== -->
+        <div class="modal-container supprimer-container">
+            <div class="overlay modal-trigger-supprimer"></div>
+            <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+                <a aria-label="close modal" class="close-modal modal-trigger-supprimer">
+                    <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
+                </a>
 
-            <!-- MODAL SUPP UN ADMINISTRATEUR =============== -->
-    <div class="modal-container supprimer-container">
-        <div class="overlay modal-trigger-supprimer"></div>
-        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
-            <a aria-label="close modal" class="close-modal modal-trigger-supprimer">
-                <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
-            </a>
+                <h3 id="modalTitle"> Supprimer l'utilisateur?</h3>
+                <p id="dialogDesc"> Utilisateur@gmail.com </p>
+                <input class="form-ajout-password" type="password" placeholder="Mot de passe">
 
-            <h3 id="modalTitle"> Supprimer l'utilisateur?</h3>
-            <p id="dialogDesc"> Utilisateur@gmail.com </p>
-            <input class="form-ajout-password" type="password" placeholder="Mot de passe">
-
-            <button class="btn-ajouter"> Confirmer </button>
+                <button class="btn-ajouter"> Confirmer </button>
+            </div>
         </div>
-    </div>
 
-
-   
-        <!-- MODAL MODIFIER UN UTILISATEUR OK =============== -->
-    <div class="modal-container modifier-container-user">
-        <div class="overlay modal-trigger-modifier-user"></div>
-        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
-            <a aria-label="close modal" class="close-modal modal-trigger-modifier-user">
-                <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
-            </a>
-            <h3 id="modalTitleModifier">Modifier l'utilisateur?</h3>
-            <p id="dialogDescModifier">Utilisateur@gmail.com</p>
-            <button class="btn-modifier">Confirmer</button>
+            <!-- MODAL MODIFIER UN UTILISATEUR  =============== -->
+        <div class="modal-container modifier-container-user">
+            <div class="overlay modal-trigger-modifier-user"></div>
+            <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+                <a aria-label="close modal" class="close-modal modal-trigger-modifier-user">
+                    <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
+                </a>
+                <h3 id="modalTitleModifier">Modifier l'utilisateur?</h3>
+                <p id="dialogDescModifier">Utilisateur@gmail.com</p>
+                <button class="btn-ajouter">Confirmer</button>
+            </div>
         </div>
-    </div>
 
+        <!-- MODAL SUPP UN ADMINISTRATEUR =============== -->
+        <div class="modal-container supprimer-container-user">
+            <div class="overlay modal-trigger-supprimer-user"></div>
+            <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+                <a aria-label="close modal" class="close-modal modal-trigger-supprimer-user">
+                    <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
+                </a>
 
-            <!-- MODAL SUPP UN ADMINISTRATEUR =============== -->
-    <div class="modal-container supprimer-container-user">
-        <div class="overlay modal-trigger-supprimer-user"></div>
-        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
-            <a aria-label="close modal" class="close-modal modal-trigger-supprimer-user">
-                <i class="fa-solid fa-rectangle-xmark fa-2xl"></i>
-            </a>
+                <h3 id="modalTitle"> Supprimer l'utilisateur?</h3>
+                <p id="dialogDesc"> Utilisateur@gmail.com </p>
+                <input class="form-ajout-password" type="password" placeholder="Mot de passe">
 
-            <h3 id="modalTitle"> Supprimer l'utilisateur?</h3>
-            <p id="dialogDesc"> Utilisateur@gmail.com </p>
-            <input class="form-ajout-password" type="password" placeholder="Mot de passe">
-
-            <button class="btn-ajouter"> Confirmer </button>
+                <button class="btn-ajouter"> Confirmer </button>
+            </div>
         </div>
     </div>
 
@@ -148,8 +144,6 @@
 
     <main>
 
-
-
         <!-- SECTION CARD  ============================= -->
         <section class=" section-card ">
 
@@ -162,7 +156,34 @@
                 <!-- CARD ADMINISTRATEUR 1 ============================= -->
                 <div class=" card card-admin">
                     <article class=" card-admin-admin ">
-                        <h3 class=" card-email "> Administrateur@hotmail.com </h3>
+                        <h3 class=" card-email "> Administrateur1@hotmail.com </h3>
+
+                        <ul class="date-status">
+                            <li><time datetime="2024-11-24">24/11/24</time></li>
+                            <li>
+                                <h4 class="status-admin"> Admin</h4>
+                            </li>
+                        </ul>
+
+                        <ul class="btn-card">
+                            <li class=" ">
+                                <button class="btn-card-modifier modal-trigger-modifier" >Modifier
+                                </button>
+                            </li>
+                            <li class="">
+                                <button class="btn-card-supprimer modal-trigger-supprimer">
+                                    <i class="fa-regular fa-trash-can fa-xl text-white"></i>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </article>
+                </div>
+
+                <!-- CARD ADMINISTRATEUR 2 ============================= -->
+                <div class=" card card-admin">
+                    <article class=" card-admin-admin ">
+                        <h3 class=" card-email "> Administrateur2@hotmail.com </h3>
 
                         <ul class="date-status">
                             <li><time datetime="2024-11-24">24/11/24</time></li>
@@ -178,11 +199,10 @@
                             </li>
                             <li class="">
                                 <button href="#" class="btn-card-supprimer modal-trigger-supprimer">
-                                    <i class="fa-regular fa-trash-can fa-lg text-white"></i>
+                                    <i class="fa-regular fa-trash-can fa-xl text-white"></i>
                                 </button>
                             </li>
                         </ul>
-
                     </article>
                 </div>
 
@@ -200,8 +220,8 @@
 
                     <!-- CARD UTILISATEURS 1 ============================= -->
                     <div class=" card card-user">
-                        <article class="card-user pb-4 ">
-                            <h3> Utilisateur1@hotmail.com </h3>
+                        <article class="card-user ">
+                            <h3 class=" card-email "> Utilisateur1@hotmail.com </h3>
 
                             <ul class="date-status">
                                 <li><time datetime="2024-11-24">24/11/24</time></li>
@@ -218,7 +238,7 @@
 
                                 <li class="">
                                     <button href="#" class="btn-card-supprimer modal-trigger-supprimer-user ">
-                                        <i class="fa-regular fa-trash-can fa-lg text-white"></i>
+                                        <i class="fa-regular fa-trash-can fa-xl text-white"></i>
                                     </button>
                                 </li>
                             </ul>
@@ -229,8 +249,36 @@
 
                     <!-- CARD UTILISATEURS 2============================= -->
                     <div class=" card card-user">
-                        <article class="card-user pb-4 ">
-                            <h3> Utilisateur1@hotmail.com </h3>
+                        <article class="card-user ">
+                            <h3 class=" card-email "> Utilisateur2@hotmail.com </h3>
+
+                            <ul class="date-status">
+                                <li><time datetime="2024-11-24">24/11/24</time></li>
+                                <li>
+                                    <h4 class="status-admin"> Admin</h4>
+                                </li>
+                            </ul>
+
+                            <ul class="btn-card">
+                                <li>
+                                    <button class="btn-card-modifier modal-trigger-modifier-user">Modifier
+                                    </buton>
+                                </li>
+
+                                <li>
+                                    <button class="btn-card-supprimer modal-trigger-supprimer-user ">
+                                        <i class="fa-regular fa-trash-can fa-xl text-white"></i>
+                                    </button>
+                                </li>
+                            </ul>
+
+                        </article>
+                    </div>
+                    <!-- ====== -->
+                      <!-- CARD UTILISATEURS 3============================= -->
+                      <div class=" card card-user">
+                        <article class="card-user  ">
+                            <h3 class=" card-email ">Utilisateur3@hotmail.com </h3>
 
                             <ul class="date-status">
                                 <li><time datetime="2024-11-24">24/11/24</time></li>
@@ -247,7 +295,7 @@
 
                                 <li class="">
                                     <button href="#" class="btn-card-supprimer modal-trigger-supprimer-user ">
-                                        <i class="fa-regular fa-trash-can fa-lg text-white"></i>
+                                        <i class="fa-regular fa-trash-can fa-xl text-white"></i>
                                     </button>
                                 </li>
                             </ul>
@@ -255,6 +303,36 @@
                         </article>
                     </div>
                     <!-- ====== -->
+                      <!-- CARD UTILISATEURS 4============================= -->
+                      <div class=" card card-user">
+                        <article class="card-user ">
+                            <h3 class=" card-email "> Utilisateur4@hotmail.com </h3>
+
+                            <ul class="date-status">
+                                <li><time datetime="2024-11-24">24/11/24</time></li>
+                                <li>
+                                    <h4 class="status-admin"> Admin</h4>
+                                </li>
+                            </ul>
+
+                            <ul class="btn-card">
+                                <li>
+                                    <button class="btn-card-modifier modal-trigger-modifier-user" href="#">Modifier
+                                    </buton>
+                                </li>
+
+                                <li class="">
+                                    <button href="#" class="btn-card-supprimer modal-trigger-supprimer-user ">
+                                        <i class="fa-regular fa-trash-can fa-xl text-white"></i>
+                                    </button>
+                                </li>
+                            </ul>
+
+                        </article>
+                    </div>
+                    <!-- ====== -->
+
+                    
 
                 </div>
                 <!-- ====== -->
