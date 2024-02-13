@@ -5,34 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- font-Roboto -->
+    <!-- font-Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-<!-- Font-bespoke -->
+    <!-- Font-bespoke -->
     <link rel="stylesheet" href="/doc/fonts/bespoke-stencil.css">
 
-<!-- CDN icone -->    
+    <!-- CDN icone -->
     <script src="https://kit.fontawesome.com/90363de2b4.js" crossorigin="anonymous"></script>
 
-<!-- ma feuille de style -->
+    <!-- ma feuille de style -->
     <link rel="stylesheet" href="style.css">
-    
-    <title>HDM Meet || User connexion</title>
+
+    <!-- faviscon -->
+    <link rel="icon" type="image/png" href="img/little_logo_blue.svg">
+
+    <title>HDM Meet || User onnexion</title>
 </head>
 
 <body>
 
     <nav class="nav-administration">
-        <h1 class=""> <img class="" src="/doc/img/little_logo_blue.svg" alt="HDM Meet" title="HDM Meet"> </h1>
+        <h1 class=""> <img class="logo-user" src="/doc/img/little_logo_blue.svg" alt="HDM Meet" title="HDM Meet"> </h1>
 
         <div class="ul-nav">
-            <div>  
+            <div>
                 <a class="btn-back " href="index.html">
                     <i class="fa-solid fa-arrow-right-to-bracket fa-rotate-180 fa-lg "></i>
-                </a> 
+                </a>
             </div>
         </div>
     </nav>
@@ -47,12 +49,14 @@
         <div class="user-content">
             <h1 class="titre-accueil">Identifiez-vous </h1>
             <ul class="form">
+
                 <li class="form-admnin">
-                    <input class="formulaire"  
-                            type="email" 
-                            placeholder="Entrez votre email">
+                    <input class="formulaire" type="email" placeholder="Entrez votre email">
                 </li>
-                <li class="form-admnin"><input class="formulaire" type="user" placeholder="Entrez otre nom"></li>
+
+                <li class="form-admnin">
+                    <input class="formulaire" type="user" placeholder="Entrez votre nom">
+                </li>
             </ul>
 
             <div class="div-btn">
@@ -63,8 +67,7 @@
         </div>
 
     </div>
-
-    <script src="./index.js" type="module"></script>
+    <script src="app.js" type="module"></script>
 </body>
 
 </html>

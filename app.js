@@ -64,3 +64,23 @@ setupModal(".modifier-container-user", ".modal-trigger-modifier-user");
 setupModal(".supprimer-container-user", ".modal-trigger-supprimer-user");
 
 
+// Récupérer la section de la fenêtre de chat
+const chatSection = document.getElementById('elementToToggle');
+
+// Fonction pour activer ou désactiver la fenêtre de chat
+function toggleChatWindow() {
+    if (chatSection.style.display === 'none') {
+        // Si la fenêtre de chat est désactivée, l'activer
+        chatSection.style.display = 'block';
+        // Modifier les colonnes de la grille pour utiliser la disposition spécifiée
+        document.querySelector('.fenetre').style.gridTemplateColumns = 'calc(70% - 0.5em) calc(30% - 0.5em)';
+    } else {
+        // Sinon, désactiver la fenêtre de chat
+        chatSection.style.display = 'none';
+        // Rétablir la disposition par défaut avec la section visio prenant 100% de la largeur
+        document.querySelector('.fenetre').style.gridTemplateColumns = '100%';
+    }
+}
+
+// Ajouter un écouteur d'événements pour le clic sur le bouton ou toute autre action qui active/désactive la fenêtre de chat
+document.getElementById('toggleButton').addEventListener('click', toggleChatWindow);
