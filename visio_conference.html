@@ -48,45 +48,48 @@
     </main>
 
     <footer class="visio-nav">
+
         <nav class="">
             <ul class=" visio-container ">
 
                 <li class="visio">
-                    <a href="#" class=" btn-visio">
-                        <div class=" visio-icone ">
-                            <i class="fa-solid fa-microphone fa-lg"></i>
+                    <button class="btn-visio" id="toggleMicrophone">
+                        <div class="visio-icone">
+                            <i class="fa-solid fa-microphone fa-lg" id="icon"></i>
                         </div>
-                        <p class="visio-text"> Coupez votre micro </p>
-                    </a>
+                        <div class="visio-text">Coupez votre micro</div>
+                    </button>
                 </li>
+                
 
                 <li class="visio">
-                    <a href="#" class=" btn-visio">
-                        <div class=" visio-icone  ">
+                    <button class=" btn-visio">
+                        <div class=" visio-icone ">
                             <i class="fa-solid fa-video fa-lg"></i>
                         </div>
-                        <p class="visio-text"> Coupez votre camera</p>
-                    </a>
-                </li>
-
-                <li class="visio participant">
-                    <a href="#" class=" btn-visio-participant">
-                        <div class=" visio-icone-numero font-semibold"> 24 </div>
-                        <p class="visio-text-participant"> Participants</p>
-                    </a>
+                        <div class="visio-text"> Coupez votre camera</div>
+                    </button>
                 </li>
 
                 <li class="visio">
-                    <a href="#" class=" btn-visio ">
+                    <button class=" btn-visio btn-visio-participant">
+                        
+                        <div class=" visio-icone-numero font-semibold"> 24 </div>
+                        <div  class="visio-text-participant"> Participants</div >
+                    </button>
+                </li>
+
+                <li class="visio">
+                    <button class=" btn-visio ">
                         <div class=" visio-icone ">
                             <i class="fa-solid fa-display fa-lg"></i>
                         </div>
                         <p class="visio-text"> Partager l'écran</p>
-                    </a>
+                    </button>
                 </li>
 
                 <li class="visio">
-                    <a class=" btn-visio" id="toggleButton">
+                    <button class=" btn-visio" id="toggleButton">
                         <div class="visio-icone ">
                             <i class="fa-regular fa-message fa-lg"></i>
                         </div>
@@ -95,15 +98,15 @@
                 </li>
 
                 <li class="visio">
-                    <a href="#" class=" btn-visio">
+                    <button class=" btn-visio">
                         <div class=" visio-icone ">
                             <i class="fa-solid fa-link fa-lg"></i>
                         </div>
                         <p class="visio-text"> Copier le lien </p>
-                    </a>
+                    </button>
                 </li>
 
-                <li class=" btn-visio deconnexion ">
+                <li class=" deconnexion ">
                     <a href="index.html" class="visio-deconnexion" id="toggleButton">Déconnexion</a>
                 </li>
             </ul>

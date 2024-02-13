@@ -511,15 +511,18 @@ main {
 
 .visio-nav{
     margin: 0.75em 2em;
+
 }
 
 .visio-container {
+    max-height: fit-content;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
     gap: 0;
     background-color: #46667B;
     border-radius: 0.625rem;
-    padding: 0;
+    
    
 }
 
@@ -531,37 +534,46 @@ main {
 
 .visio {
     list-style: none;
-    margin: 0.25em 1em;
-    padding: 1rem 0.25rem .5rem 0.25rem;
-    height: fit-content;
     background-color: #46667B;
-    border-radius: 0.625rem;
+    
+    margin-bottom: 0;
+   
 }
 
+
 .btn-visio {
+    all: unset;
     text-decoration: none;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    margin: 0.25em 1em;
+    padding: 1rem 0.25rem 0.25rem 0.25rem;
     list-style: none;
     color: var(--main-color);
     cursor: pointer;
-}
+    background: #46667B;
+    border-radius: 0.625rem;
 
+}
 @media (hover: hover) {
-    .visio:hover {
+    .btn-visio:hover {
         background: #39BAAB;
     }
 }
 
+.icon-microphone-slash {
+    color: #9B000C; /* Couleur rouge */
+}
+
 .visio-icone {
     display: flex;
-    align-items: center;
+    display: block;
+     text-align: center;
     justify-content: center;
+
 
 }
 
 .visio-text {
-    padding: 1em 0 0 0;
+    padding: .5em 0 0 0;
     margin: 0;
     text-align: center;
 }
@@ -571,11 +583,11 @@ main {
 }
 
 .btn-visio-participant {
-    text-decoration: none;
     text-align: center;
-    padding-bottom: 0;
+    padding-bottom: .4em;
     color: var(--main-color);
     cursor: pointer;
+    
 }
 
 .visio-text-participant {
@@ -585,11 +597,12 @@ main {
 
 .visio-icone-numero {
     justify-content: center;
-    padding-bottom: .2em;
+    padding-bottom: .5em;
 }
 
 .deconnexion {
     padding: 1.5em;
+    list-style: none;
 
 }
 

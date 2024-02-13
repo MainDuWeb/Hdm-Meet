@@ -84,3 +84,23 @@ function toggleChatWindow() {
 
 // Ajouter un écouteur d'événements pour le clic sur le bouton ou toute autre action qui active/désactive la fenêtre de chat
 document.getElementById('toggleButton').addEventListener('click', toggleChatWindow);
+
+
+// Récupérer le bouton et l'icône
+const toggleMicrophone = document.getElementById('toggleMicrophone');
+const icon = document.getElementById('icon');
+
+// Ajouter un écouteur d'événements pour le clic sur le bouton
+toggleMicrophone.addEventListener('click', function() {
+    // Changer l'icône en fonction de sa classe actuelle
+    if (icon.classList.contains('fa-microphone')) {
+        // Si l'icône est un microphone, la changer en microphone barré
+        icon.classList.remove('fa-microphone');
+        icon.classList.add('fa-microphone-slash');
+        
+    } else {
+        // Sinon, si l'icône est un microphone barré, la changer en microphone
+        icon.classList.remove('fa-microphone-slash');
+        icon.classList.add('fa-microphone');
+    }
+});
