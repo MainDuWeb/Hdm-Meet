@@ -27,16 +27,56 @@ button {
     border: none;
 }
 
-
 select {
     all: unset;
 }
 
-.btn{ 
-    padding: 0.5rem 1.5rem;
+.btn-primary, .btn-secondary, .nav-admin-btn, .btn-modifier,.btn-supprimer {
+    padding: 0.75rem 2.5rem 0.75rem 2.5rem;
     border-radius: 0.625rem;
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
+.btn-primary {
+    color: var(--main-color);
+    background-color: var(--color-turquoise);
+}
+
+.btn-secondary {
+    color: var(--main-color);
+    background-color: #00619E;
+    box-shadow: 1px 1px 1px 1px #d2ecfc;
+}
+
+.nav-admin-btn {
+    color: var(--main-color);
+    background-color: var(--color-red);
+    box-shadow: 1px 1px 1px 1px #d2ecfc;
+}
+
+.btn-back {
+    padding: .4em;
+    border-radius: 0.625rem;
+    color: var(--main-color);
+    background-color: var(--color-red);
+    cursor: pointer;
+}
+
+.btn-modifier{
+    background-color: #FAFDFF;
+    color: #46667B;
+    cursor: pointer;
+
+}
+
+.btn-supprimer {
+    background-color: var(--color-red);
+    padding: 0.75rem 1rem;
+    margin-left: 1em;
+    color: #FAFDFF;
+    cursor: pointer;
+}
 
 /* Accueil====================================================== */
 .grid-accueil {
@@ -60,9 +100,7 @@ select {
 }
 
 .logo-accueil {
-    margin-right: 2rem
-        /* 16px */
-    ;
+    margin-right: 2rem;
     max-width: 20rem;
 }
 
@@ -79,20 +117,10 @@ select {
     padding: 1.5rem 3.5rem 0 1.5rem;
 }
 
-.btn-connexion-admin {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    color: var(--main-color);
-    text-decoration: none;
-    /* padding: 0.5em 1.5em; */
-    background-color: #00619E;
-    /* border-radius: 0.625rem; */
-    box-shadow: 1px 1px 1px 1px #d2ecfc;
-    cursor: pointer;
-}
+
 
 .espace-accueil {
     margin-top: 13.5rem;
-
 }
 
 .titre-accueil {
@@ -116,24 +144,10 @@ select {
     padding-top: 2rem;
 }
 
-.btn-connexion {
-    padding: 0.75rem 2.5rem 0.75rem 2.5rem;
-    color: var(--main-color);
-    border-radius: 0.625rem;
-    background-color: var(--color-turquoise);
-    text-decoration: none;
-    cursor: pointer;
-}
+
 
 /* Admin connexion====================================================== */
-.btn-back {
-    color: var(--main-color);
-    background-color: var(--color-red);
-    padding: .4em;
-    border-radius: 0.625rem;
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    cursor: pointer;
-}
+
 
 .espaceur {
     margin-top: 10em;
@@ -147,7 +161,6 @@ select {
 
 .form-admnin {
     padding-top: .5rem;
-
 }
 
 .formulaire {
@@ -197,16 +210,6 @@ select {
     padding: 0 2em 0 0;
 }
 
-.nav-admin-btn {
-    color: var(--main-color);
-    text-decoration: none;
-    background-color: var(--color-red);
-    border-radius: 0.625rem;
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    padding: 0.5em 1.5em;
-    box-shadow: 1px 1px 1px 1px #d2ecfc;
-}
-
 main {
     margin: 0 2em 0 2em;
 }
@@ -222,8 +225,6 @@ main {
     border-radius: 0.625rem;
     padding: 1em 2em 1em 2em;
     margin-left: 2em;
-
-
 }
 
 .form-ajout {
@@ -231,7 +232,6 @@ main {
     text-decoration: none;
     list-style-type: none;
     padding-left: 0;
-
 }
 
 .form-ajout-email,
@@ -240,10 +240,9 @@ main {
     border-radius: 0.625rem;
     box-shadow: inset .02em .02em rgba(0, 97, 158, 0.25);
     color: #2e5996;
-    padding: 0.5rem 2rem ;
+    padding: 0.5rem 2rem;
     font-size: 1.25rem;
     font-weight: 100;
-
 }
 
 .form-ajout-email::placeholder,
@@ -255,7 +254,6 @@ main {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-
 }
 
 .form-item-1,
@@ -274,25 +272,18 @@ main {
     font-weight: 300;
     font-style: normal;
 }
+
 .dropdown-user {
     color: #00619E;
     text-decoration: none;
     background-color: #FAFDFF;
     border: #FAFDFF;
     border-radius: 0.625rem;
-    padding: 0.5rem 1rem ;
+    padding: 0.5rem 1rem;
     font-size: 1.25rem;
 }
 
-.btn-ajouter {
-    color: #FAFDFF;
-    text-decoration: none;
-    background-color: #39BAAB;
-    border-radius: 0.625rem;
-    padding: 0.5em 1.5em;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
+
 
 .new-user {
     font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
@@ -312,8 +303,6 @@ main {
     margin-top: 4em;
 }
 
-
-
 .double-colonne {
     display: grid;
     grid-template-columns: 48.5% 48.5%;
@@ -327,7 +316,6 @@ main {
 
 .card-admin {
     background-color: #46667B;
-    /* à changer */
     margin-bottom: 1em;
     color: #FAFDFF;
 
@@ -346,10 +334,8 @@ main {
     margin: 1em 0 0 0;
     letter-spacing: 0.05em;
     font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-
-
+    font-weight: 500;
+    font-style: normal;
 }
 
 .btn-card {
@@ -357,34 +343,6 @@ main {
     list-style-type: none;
     padding-left: 0;
 }
-
-.btn-card-modifier {
-    text-decoration: none;
-    background-color: #FAFDFF;
-    font-size: 1em;
- 
-    border-radius: 0.625rem;
-    padding: 0.75rem 3rem;
-    color: #46667B;
-    cursor: pointer;
-
-
-}
-
-.btn-card-supprimer {
-    text-decoration: none;
-    background-color: var(--color-red);
-    border-radius: 0.625rem;
-    padding: 0.75rem 1rem;
-    margin-left: 1em;
-    color: #FAFDFF;
-    font-size: 1em;
-
-    cursor: pointer;
-
-
-}
-
 
 .date-status {
     list-style-type: none;
@@ -400,9 +358,8 @@ main {
 
 /* User connexion ====================================================== */
 
-.logo-user{
+.logo-user {
     width: 6em;
-
 }
 
 .user-container {
@@ -428,6 +385,7 @@ main {
 .no-margin {
     margin: 0;
 }
+
 .petit-logo {
     width: 3em;
 }
@@ -435,7 +393,7 @@ main {
 .fenetre {
     margin: 0 2em;
     display: grid;
-    grid-template-columns: 100%; 
+    grid-template-columns: 100%;
     gap: 1em;
 }
 
@@ -446,38 +404,55 @@ main {
 }
 
 .fenetre-chat {
-    display: none; 
+    display: none;
     /* margin: 0 33%; */
     height: 36em;
     background-color: #46667B;
     border-radius: 0.625rem;
-  
 }
-.chat-text{
+
+.chat-text {
     background-color: #FAFDFF;
     padding: 5em 2.5em 27em 2.5em;
     margin: .5em;
     border-radius: 0.625rem;
 }
 
-.chat-writting{
+.chat-writting {
     margin: 0 .5em .5em .5em;
     padding: .5em 2em;
-    
     border-radius: 0.625rem;
     border: none;
     font-size: large;
 }
-.btn-chat-envoyer{
+
+.btn-chat-envoyer {
     padding: 0.5rem 1.5rem;
     border-radius: 0.625rem;
     color: var(--main-color);
-    background-color: var(--color-turquoise );
+    background-color: var(--color-turquoise);
     font-size: large;
-    
-
 }
 
+.fenetre-participant {
+    display: none;
+    height: 36em;
+    background-color: #46667B;
+    border-radius: 0.625rem;
+}
+
+.inner-participant {
+    background-color: #FAFDFF;
+    padding: 1em 1em 1em 0em;
+    margin: .5em;
+    border-radius: 0.625rem;
+    overflow: auto;
+    height: 33em;
+    color: #0D3A69;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .card-visio {
     border-radius: 0.625rem;
@@ -505,13 +480,10 @@ main {
     border-radius: 0.625rem 0.625rem 0 0;
 }
 
-
-
 /* Visio-conférence - footer ====================================================== */
 
-.visio-nav{
-    margin: 0.75em 2em;
-
+.visio-nav {
+    margin: 0.5em 2em;
 }
 
 .visio-container {
@@ -522,8 +494,6 @@ main {
     gap: 0;
     background-color: #46667B;
     border-radius: 0.625rem;
-    
-   
 }
 
 .font-semibold {
@@ -535,17 +505,15 @@ main {
 .visio {
     list-style: none;
     background-color: #46667B;
-    
     margin-bottom: 0;
-   
-}
 
+}
 
 .btn-visio {
     all: unset;
     text-decoration: none;
-    margin: 0.25em 1em;
-    padding: 1rem 0.25rem 0.25rem 0.25rem;
+    margin: 0.25em 1em 0.1em 1em;
+    padding: .75rem 0.25rem 0.25rem 0.25rem;
     list-style: none;
     color: var(--main-color);
     cursor: pointer;
@@ -553,23 +521,18 @@ main {
     border-radius: 0.625rem;
 
 }
+
 @media (hover: hover) {
     .btn-visio:hover {
-        background: #39BAAB;
+        background: #7290a5;
     }
-}
-
-.icon-microphone-slash {
-    color: #9B000C; /* Couleur rouge */
 }
 
 .visio-icone {
     display: flex;
     display: block;
-     text-align: center;
+    text-align: center;
     justify-content: center;
-
-
 }
 
 .visio-text {
@@ -578,16 +541,11 @@ main {
     text-align: center;
 }
 
-.participant {
-    padding: 0.75rem 0.25rem .37rem 0.25rem;
-}
-
 .btn-visio-participant {
     text-align: center;
     padding-bottom: .4em;
     color: var(--main-color);
     cursor: pointer;
-    
 }
 
 .visio-text-participant {
@@ -601,26 +559,26 @@ main {
 }
 
 .deconnexion {
-    padding: 1.5em;
+    padding: 1.6em 0 1.5em 0;
     list-style: none;
-
 }
 
 .visio-deconnexion {
     text-decoration: none;
-    
     color: var(--main-color);
     background-color: var(--color-red);
     border-radius: 0.625rem;
-    padding: 0.75rem ;
-    margin-top: auto; /* Pousse le lien vers le bas */
+    padding: 0.75rem;
+    margin-top: auto;
     text-align: center
+}
 
+.btn-visio:focus {
+    background: #7290a5;
+    color: white;
 }
 
 /* MODAL BOX ================================= */
-
-
 
 .modal-container {
     /* display: none; */
@@ -667,19 +625,11 @@ main {
         transform 0.4s ease-out;
 }
 
-/* .modal-container.active .modal {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.4s 0.2s ease-out,
-    transform 0.4s 0.2s ease-out;
-  } */
-
 .modal-container.active .modal {
     opacity: 1;
     transform: translate(-50%, -50%);
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
-
 
 .close-modal {
     /* padding: 8px 10px; */

@@ -35,15 +35,31 @@
     </header>
 
     <main class="fenetre">
-        <section class="fenetre-visio">
 
-        </section>
-        <section class="fenetre-chat" id="elementToToggle">
+
+        <section class="fenetre-visio"> </section>
+
+        <section class="fenetre-chat" id="elementToToggle" style="display: none;">
+
             <div class="chat-text"></div>
-            <input type="text" placeholder="Dites quelquechose " class="chat-writting">
+            <input name="chat-text" type="text" placeholder="Dites quelquechose " class="chat-writting">
             <button class="btn-chat-envoyer"> Envoyer </button>
 
         </section>
+
+
+        <section class="fenetre-participant" id="ParticipantToToggle">
+
+            <div class="inner-participant">
+                <ol class="participants">
+                    <li class="participants">eloïse la luciole de brandebourg</li>
+                    <li class="participants">gregoire le charpentier </li>
+                    <li class="participants">eloïselemarchand@gmail.com</li>
+                </ol>
+            </div>
+
+        </section>
+
 
     </main>
 
@@ -57,25 +73,25 @@
                         <div class="visio-icone">
                             <i class="fa-solid fa-microphone fa-lg" id="icon"></i>
                         </div>
-                        <div class="visio-text">Coupez votre micro</div>
+                        <div class="visio-text" id="buttonText">Coupez le micro</div>
                     </button>
                 </li>
-                
+
 
                 <li class="visio">
-                    <button class=" btn-visio">
-                        <div class=" visio-icone ">
-                            <i class="fa-solid fa-video fa-lg"></i>
+                    <button class="btn-visio" id="toggleCamera">
+                        <div class="visio-icone">
+                            <i class="fa-solid fa-video fa-lg" id="cameraIcon"></i>
                         </div>
-                        <div class="visio-text"> Coupez votre camera</div>
+                        <div class="visio-text" id="cameraButtonText">Coupez la caméra</div>
                     </button>
                 </li>
 
+
                 <li class="visio">
-                    <button class=" btn-visio btn-visio-participant">
-                        
+                    <button class=" btn-visio btn-visio-participant" id="toggleButtonParticipant">
                         <div class=" visio-icone-numero font-semibold"> 24 </div>
-                        <div  class="visio-text-participant"> Participants</div >
+                        <div class="visio-text-participant"> Participants</div>
                     </button>
                 </li>
 
@@ -94,7 +110,7 @@
                             <i class="fa-regular fa-message fa-lg"></i>
                         </div>
                         <p class="visio-text"> Vers le chat</p>
-                    </a>
+                        </a>
                 </li>
 
                 <li class="visio">

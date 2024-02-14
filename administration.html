@@ -8,7 +8,9 @@
     <!-- font-Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Font-bespoke -->
     <link rel="stylesheet" href="/doc/fonts/bespoke-stencil.css">
@@ -18,7 +20,7 @@
 
     <!-- ma feuille de style -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- faviscon -->
     <link rel="icon" type="image/png" href="img/little_logo_blue.svg">
 
@@ -26,7 +28,7 @@
 </head>
 
 <body>
-<!-- DIV MODAL  =============== -->
+    <!-- DIV MODAL  =============== -->
     <div>
         <!-- MODAL AJOUTER UN UTILISATEUR =============== -->
         <div class="modal-container">
@@ -38,7 +40,7 @@
                 <h3 id="modalTitle">Voulez-vous ajouter cet utilisateur?</h3>
                 <p id="dialogDesc"> Utilisateur@gmail.com </p>
 
-                <button class="btn-ajouter"> Comfirmer </button>
+                <button class="btn-primary"> Comfirmer </button>
             </div>
         </div>
 
@@ -51,7 +53,7 @@
                 </a>
                 <h3 id="modalTitleModifier">Modifier l'utilisateur?</h3>
                 <p id="dialogDescModifier">Utilisateur@gmail.com</p>
-                <button class="btn-ajouter">Confirmer</button>
+                <button class="btn-primary">Confirmer</button>
             </div>
         </div>
 
@@ -67,11 +69,11 @@
                 <p id="dialogDesc"> Utilisateur@gmail.com </p>
                 <input class="form-ajout-password" type="password" placeholder="Mot de passe">
 
-                <button class="btn-ajouter"> Confirmer </button>
+                <button class="btn-primary"> Confirmer </button>
             </div>
         </div>
 
-            <!-- MODAL MODIFIER UN UTILISATEUR  =============== -->
+        <!-- MODAL MODIFIER UN UTILISATEUR  =============== -->
         <div class="modal-container modifier-container-user">
             <div class="overlay modal-trigger-modifier-user"></div>
             <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
@@ -80,7 +82,7 @@
                 </a>
                 <h3 id="modalTitleModifier">Modifier l'utilisateur?</h3>
                 <p id="dialogDescModifier">Utilisateur@gmail.com</p>
-                <button class="btn-ajouter">Confirmer</button>
+                <button class="btn-primary">Confirmer</button>
             </div>
         </div>
 
@@ -96,7 +98,7 @@
                 <p id="dialogDesc"> Utilisateur@gmail.com </p>
                 <input class="form-ajout-password" type="password" placeholder="Mot de passe">
 
-                <button class="btn-ajouter"> Confirmer </button>
+                <button class="btn-primary"> Confirmer </button>
             </div>
         </div>
     </div>
@@ -106,9 +108,16 @@
             <h1 class=""> <img class="" src="/doc/img/little_logo_blue.svg" alt="HDM Meet" title="HDM Meet"> </h1>
 
             <ul class="ul-nav">
-                <li class="nav-admin-icone"> <i class="fa-regular fa-user fa-lg"></i> </li>
+                <li class="nav-admin-icone">
+                    <i class="fa-regular fa-user fa-lg"></i>
+                </li>
                 <li class="nav-admin-user"> administrateur@hotmail.com</li>
-                <li class=""> <a class="nav-admin-btn" href="index.html"> Déconnexion </a></li>
+                <li class="">
+                    <a class="nav-admin-btn" href="index.html">
+                        Déconnexion
+
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -136,7 +145,7 @@
                 </li>
 
                 <li class="form-item-4">
-                    <button class="modal-btn modal-trigger-ajouter btn-ajouter ">Ajouter</button>
+                    <button class="modal-btn modal-trigger-ajouter btn-primary ">Ajouter</button>
                 </li>
 
             </ul>
@@ -168,11 +177,11 @@
 
                         <ul class="btn-card">
                             <li class=" ">
-                                <button class="btn-card-modifier modal-trigger-modifier" href="#">Modifier
+                                <button class="btn-modifier modal-trigger-modifier" href="#">Modifier
                                 </button>
                             </li>
                             <li class="">
-                                <button class="btn-card-supprimer modal-trigger-supprimer">
+                                <button class="btn-supprimer modal-trigger-supprimer">
                                     Supprimer
                                 </button>
                             </li>
@@ -195,11 +204,11 @@
 
                         <ul class="btn-card">
                             <li class=" ">
-                                <button class="  btn-card-modifier modal-trigger-modifier" href="#">Modifier
+                                <button class=" btn-modifier modal-trigger-modifier" href="#">Modifier
                                 </button>
                             </li>
                             <li class="">
-                                <button class="btn-card-supprimer modal-trigger-supprimer">
+                                <button class="btn-supprimer modal-trigger-supprimer">
                                     Supprimer
                                 </button>
                             </li>
@@ -233,12 +242,12 @@
 
                             <ul class="btn-card">
                                 <li>
-                                    <button class="btn-card-modifier modal-trigger-modifier-user" href="#">Modifier
-                                    </buton>
+                                    <button class="btn-modifier modal-trigger-modifier-user" href="#">Modifier
+                                        </buton>
                                 </li>
 
                                 <li class="">
-                                    <button class="btn-card-supprimer modal-trigger-supprimer">
+                                    <button class="btn-supprimer modal-trigger-supprimer">
                                         Supprimer
                                     </button>
                                 </li>
@@ -262,12 +271,12 @@
 
                             <ul class="btn-card">
                                 <li>
-                                    <button class="btn-card-modifier modal-trigger-modifier-user">Modifier
-                                    </buton>
+                                    <button class="btn-modifier modal-trigger-modifier-user">Modifier
+                                        </buton>
                                 </li>
 
                                 <li class="">
-                                    <button class="btn-card-supprimer modal-trigger-supprimer">
+                                    <button class="btn-supprimer modal-trigger-supprimer">
                                         Supprimer
                                     </button>
                                 </li>
@@ -276,8 +285,8 @@
                         </article>
                     </div>
                     <!-- ====== -->
-                      <!-- CARD UTILISATEURS 3============================= -->
-                      <div class=" card card-user">
+                    <!-- CARD UTILISATEURS 3============================= -->
+                    <div class=" card card-user">
                         <article class="card-user  ">
                             <h3 class=" card-email ">Utilisateur3@hotmail.com </h3>
 
@@ -290,12 +299,12 @@
 
                             <ul class="btn-card">
                                 <li>
-                                    <button class="btn-card-modifier modal-trigger-modifier-user" href="#">Modifier
-                                    </buton>
+                                    <button class="btn-modifier modal-trigger-modifier-user" href="#">Modifier
+                                        </buton>
                                 </li>
 
                                 <li class="">
-                                    <button class="btn-card-supprimer modal-trigger-supprimer">
+                                    <button class="btn-supprimer modal-trigger-supprimer">
                                         Supprimer
                                     </button>
                                 </li>
@@ -304,8 +313,8 @@
                         </article>
                     </div>
                     <!-- ====== -->
-                      <!-- CARD UTILISATEURS 4============================= -->
-                      <div class=" card card-user">
+                    <!-- CARD UTILISATEURS 4============================= -->
+                    <div class=" card card-user">
                         <article class="card-user ">
                             <h3 class=" card-email "> Utilisateur4@hotmail.com </h3>
 
@@ -318,12 +327,12 @@
 
                             <ul class="btn-card">
                                 <li>
-                                    <button class="btn-card-modifier modal-trigger-modifier-user" href="#">Modifier
-                                    </buton>
+                                    <button class="btn-modifier modal-trigger-modifier-user" href="#">Modifier
+                                        </buton>
                                 </li>
 
                                 <li class="">
-                                    <button class="btn-card-supprimer modal-trigger-supprimer">
+                                    <button class="btn-supprimer modal-trigger-supprimer">
                                         Supprimer
                                     </button>
                                 </li>
@@ -333,7 +342,7 @@
                     </div>
                     <!-- ====== -->
 
-                    
+
 
                 </div>
                 <!-- ====== -->
