@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- font-Roboto -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<!-- Font-bespoke -->
+    <!-- font-Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Font-bespoke -->
     <link rel="stylesheet" href="/doc/fonts/bespoke-stencil.css">
 
-<!-- CDN icone -->    
+    <!-- CDN icone -->
     <script src="https://kit.fontawesome.com/90363de2b4.js" crossorigin="anonymous"></script>
 
-<!-- ma feuille de style -->
+    <!-- ma feuille de style -->
     <link rel="stylesheet" href="style.css">
 
-<!-- faviscon -->
-<link rel="icon" type="image/png" href="img/little_logo_blue.svg">
-    
+    <!-- faviscon -->
+    <link rel="icon" type="image/png" href="img/little_logo_blue.svg">
+
     <title>HDM Meet || connexion admin</title>
 </head>
 
@@ -29,9 +31,14 @@
     <div class="grid-accueil">
 
         <header class="section-logo">
-            <div class="div-logo">
+            <div class="hidden-inlaptop">
+                <a class="btn-back " href="index.html">
+                    <i class="fa-solid fa-arrow-right-to-bracket fa-rotate-180 fa-lg "></i>
+                </a>
+            </div>
+            <div class="div-logo ">
                 <img class="logo-accueil" src="doc/img/little_logo.svg" alt="" title="HDM Meet">
-                <blockquote class="citation-logo-accueil">"Seul on va plus vite, <br> ensemble on va plus loin"
+                <blockquote class="citation-logo-accueil">"Seul on va plus vite, ensemble on va plus loin"
                 </blockquote>
             </div>
         </header>
@@ -45,12 +52,11 @@
                 </nav>
             </header>
 
-            <div class="espaceur">
-                <h1 class="titre-accueil">Identifiez-vous </h1>
-            </div>
-            
+            <div class="espace-accueil">
+            <h1 class="titre-accueil ">Identifiez-vous </h1>
+      
             <ul class="form">
-                <li class="form-admnin"><input class="formulaire "  type="email" placeholder="Entrez votre email"></li>
+                <li class="form-admnin"><input class="formulaire " type="email" placeholder="Entrez votre email"></li>
                 <li class="form-admnin"><input class="formulaire" type="password" placeholder="Mot de passe"></li>
             </ul>
 
@@ -59,6 +65,7 @@
                     Connexion
                 </a>
             </div>
+        </div>
         </section>
 
     </div>

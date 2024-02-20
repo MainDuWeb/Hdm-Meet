@@ -5,12 +5,6 @@
     --color-modal: rgba(70, 102, 123, 0.5);
 }
 
-@keyframes pulse {
-    60% {
-        opacity: .7;
-    }
-}
-
 /* General====================================================== */
 
 body {
@@ -31,7 +25,11 @@ select {
     all: unset;
 }
 
-.btn-primary, .btn-secondary, .nav-admin-btn, .btn-modifier,.btn-supprimer {
+.btn-primary,
+.btn-secondary,
+.nav-admin-btn,
+.btn-modifier,
+.btn-supprimer {
     padding: 0.75rem 2.5rem 0.75rem 2.5rem;
     border-radius: 0.625rem;
     text-decoration: none;
@@ -63,7 +61,7 @@ select {
     cursor: pointer;
 }
 
-.btn-modifier{
+.btn-modifier {
     background-color: #FAFDFF;
     color: #46667B;
     cursor: pointer;
@@ -77,6 +75,16 @@ select {
     color: #FAFDFF;
     cursor: pointer;
 }
+
+.hidden-inlaptop {
+    display: none;
+
+}
+
+.hidden-insmartphone {
+    display: none;
+}
+
 
 /* Accueil====================================================== */
 .grid-accueil {
@@ -93,21 +101,21 @@ select {
 }
 
 .div-logo {
-    margin-top: 14rem;
-    margin-bottom: 13rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    width: 80%;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.logo-accueil {
-    margin-right: 2rem;
-    max-width: 20rem;
-}
 
 .citation-logo-accueil {
     color: var(--main-color);
     margin-top: .5em;
-    margin-left: 9rem;
+    margin-left: 10rem;
     font-size: 0.75rem;
 }
 
@@ -117,18 +125,19 @@ select {
     padding: 1.5rem 3.5rem 0 1.5rem;
 }
 
-
-
-.espace-accueil {
-    margin-top: 13.5rem;
-}
-
 .titre-accueil {
     color: #162D4E;
     margin-bottom: 0;
     font-size: 2.8rem;
     font-weight: 600;
     font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+}
+
+.espace-accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
 }
 
 .sous-titre-acceuil {
@@ -144,14 +153,103 @@ select {
     padding-top: 2rem;
 }
 
+@media (0px <=width <=600px) {
 
+
+    .grid-accueil {
+        display: block;
+        color: #162D4E;
+    }
+
+    .section-logo {
+        background-color: #00619E;
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+    }
+
+    .hidden-inlaptop {
+        display: block;
+        width: fit-content;
+        margin: .5em .5em .5em auto;
+    }
+
+    .btn-secondary {
+        width: fit-content;
+        padding: 0.5rem 1rem;
+        border: 0;
+        border-radius: 0.4rem;
+        text-decoration: none;
+        font-size: .5rem;
+
+        color: var(--main-color);
+        background-color: var(--color-turquoise);
+        box-shadow: none;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .div-logo {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .logo-accueil {
+        width: 90%;
+    }
+
+    .citation-logo-accueil {
+        margin: 1em auto;
+        width: fit-content;
+    }
+
+    .nav-acceuil {
+        display: none;
+    }
+
+    .espace-accueil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 15em;
+        align-items: center;
+    }
+
+    .titre-accueil {
+        color: #162D4E;
+        margin: 1em .6em .2em .6em;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+    }
+
+    .sous-titre-acceuil {
+        color: #162D4E;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 1.3em;
+    }
+
+    .index-text {
+        display: none;
+    }
+
+    .div-btn {
+        padding-top: 2rem;
+    }
+
+    .btn-primary {
+        padding: 0.75rem 6.5rem;
+        margin: 0 .9em;
+    }
+
+
+}
 
 /* Admin connexion====================================================== */
 
-
-.espaceur {
-    margin-top: 10em;
-}
 
 .form {
     list-style-type: none;
@@ -183,14 +281,34 @@ select {
     font-style: normal;
 }
 
+@media (0px <=width <=600px) {
+    .form-admnin {
+        padding-top: .5rem;
+    }
+
+    .formulaire {
+        border-radius: 0.4rem;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+    }
+
+    .form .formulaire::placeholder {
+        font-size: 1rem;
+    }
+}
+
 /* Administration ====================================================== */
 
 .nav-administration {
     display: grid;
     grid-template-columns: auto;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
-
+.taille-logo {
+    width: 8em;
+    margin: 0em 0em 1em 0em;
 }
 
 .ul-nav {
@@ -206,17 +324,11 @@ select {
 }
 
 .nav-admin-user {
-    font-size: large;
-    padding: 0 2em 0 0;
-}
-
-main {
-    margin: 0 2em 0 2em;
-}
-
-.titre-admin {
-    font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
-    color: var(--main-color);
+    font-size: 1.1em;
+    padding: 0 1em 0 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .ajout {
@@ -224,7 +336,15 @@ main {
     width: fit-content;
     border-radius: 0.625rem;
     padding: 1em 2em 1em 2em;
-    margin-left: 2em;
+    margin: 0 0em 6em 2em;
+}
+
+.new-user {
+    font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+    color: #FAFDFF;
+    font-weight: 800;
+    font-size: 1.5em;
+    padding-left: 1em;
 }
 
 .form-ajout {
@@ -240,17 +360,15 @@ main {
     border-radius: 0.625rem;
     box-shadow: inset .02em .02em rgba(0, 97, 158, 0.25);
     color: #2e5996;
-    padding: 0.5rem 2rem;
-    font-size: 1.25rem;
+    padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    font-size: 1.1rem;
     font-weight: 100;
 }
 
 .form-ajout-email::placeholder,
 .form-ajout-password::placeholder {
     color: #0D3A69;
-    font-size: 1.25rem;
-    font-style: normal;
-    line-height: normal;
+    font-size: 1.1rem;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -263,52 +381,39 @@ main {
 
 }
 
-.form .formulaire::placeholder {
-    color: #0D3A69;
-    font-size: 1.25rem;
-    font-style: normal;
-    line-height: normal;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
 .dropdown-user {
     color: #00619E;
     text-decoration: none;
     background-color: #FAFDFF;
     border: #FAFDFF;
     border-radius: 0.625rem;
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-}
-
-
-
-.new-user {
-    font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
-    color: #FAFDFF;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 .titre-admin,
 .titre-user {
     font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
     color: #0D3A69;
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+main {
+    margin: 0 2em 0 2em;
 }
 
 .section-card {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 1em;
-    margin-top: 4em;
+    gap: 2em;
 }
-
 .double-colonne {
     display: grid;
     grid-template-columns: 48.5% 48.5%;
-    gap: 1em;
+    grid-gap: 1em;
 }
-
 .card {
     border-radius: 0.625rem;
     padding: .1em 7em 1em 2em;
@@ -355,6 +460,149 @@ main {
     margin: 0;
     padding: 0 2em 0 4em;
 }
+
+@media (0px <=width <=600px) {
+
+    .taille-logo {
+        width: 4em;
+        margin-left: .4em;
+    }
+
+    .ul-nav {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        padding-top: 1.5em;
+        padding-right: .5em;
+    }
+
+    .nav-admin-user {
+        font-size: .6em;
+        padding: 0 1em 0 0;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .nav-admin-btn {
+        padding: 0.75rem;
+        border-radius: 0.4rem;
+        font-size: .5rem;
+    }
+
+    .ajout {
+        width: auto;
+        border-radius: 0.4rem;
+        padding: .5em;
+        margin: 0 .5em;
+    }
+
+    .new-user {
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    .form-ajout {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .form-ajout-email,
+    .form-ajout-password {
+        border-radius: .4rem;
+        padding: 0.75rem 8.5rem 0.75rem 0.75rem;
+        font-size: .5rem;
+        font-weight: 100;
+    }
+
+    .form-ajout-email::placeholder,
+    .form-ajout-password::placeholder {
+        font-size: 1rem;
+        font-weight: 300;
+        padding-left: .5em;
+    }
+
+    .form-item-1,
+    .form-item-2,
+    .form-item-3 {
+        margin: 0 1em;
+        padding: .2em 0;
+    }
+
+    .dropdown-user {
+        margin: 0.5em 0;
+        border-radius: .4rem;
+        padding: 0.5rem .5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .btn-primary-sm {
+        padding: 0.5rem 5.5rem;
+        border-radius: .4rem;
+        font-size: 1rem;
+        margin: 0 .9em;
+    }
+    main {
+        margin: .5em;
+    }
+
+    .section-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titre-admin,
+    .titre-user {
+        font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+        font-size: .8rem;
+        font-weight: 200;
+    }
+
+    .double-colonne {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .card {
+        border-radius: 0.625rem;
+        width: 100%;
+        padding: 0 ;
+    }
+
+    .card-email {
+        padding: 1em 2em 0em 1.5em ;
+        font-weight: 500;
+        font-size: medium;
+        margin: 0;
+    }
+
+    .btn-card {
+        padding-left: 1.5em;
+    }
+    
+    .date-status {
+        list-style-type: none;
+        display: block flex;
+        padding: 0 0 .3em 1.5em;
+    }
+    
+    .status-admin {
+        margin: 0;
+        padding: 0 2em 0 4em;
+    }
+
+    .btn-modifier,
+.btn-supprimer {
+    padding: 0.75;
+    border-radius: 0.4rem;
+    font-size: .8rem;
+}
+
+}
+
 
 /* User connexion ====================================================== */
 
@@ -655,4 +903,12 @@ main {
     color: #162D4E;
     line-height: 1.4;
     margin-bottom: 1em;
+}
+@media (0px <=width <=600px) {
+    .modal {
+        width: 80%;
+    }
+    .espaceur-mdp{
+        margin-bottom: 1em;
+    }
 }
