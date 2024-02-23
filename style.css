@@ -2,10 +2,19 @@
     --main-color: #f4faff;
     --color-red: #9B000C;
     --color-turquoise: #39BAAB;
+    --color-blue: #00619E;
     --color-modal: rgba(70, 102, 123, 0.5);
 }
 
 /* General====================================================== */
+
+html{
+    --res: calc(0.01*10vmin);
+}
+
+*{
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -13,7 +22,6 @@ body {
     background-color: var(--main-color);
     font-family: 'Roboto', sans-serif;
     color: #162D4E;
-    /* Utilisez la variation de police Bespoke Stencil que vous préférez ici */
 }
 
 button {
@@ -31,9 +39,8 @@ select {
 .btn-modifier,
 .btn-supprimer {
     padding: 0.75rem 2.5rem 0.75rem 2.5rem;
-    border-radius: 0.625rem;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: calc(20*var(--res));
 }
 
 .btn-primary {
@@ -42,6 +49,7 @@ select {
 }
 
 .btn-secondary {
+    padding: 0.75rem 2rem 0.75rem 2rem;
     color: var(--main-color);
     background-color: #00619E;
     box-shadow: 1px 1px 1px 1px #d2ecfc;
@@ -55,17 +63,13 @@ select {
 
 .btn-back {
     padding: .4em;
-    border-radius: 0.625rem;
     color: var(--main-color);
     background-color: var(--color-red);
-    cursor: pointer;
 }
 
 .btn-modifier {
     background-color: #FAFDFF;
     color: #46667B;
-    cursor: pointer;
-
 }
 
 .btn-supprimer {
@@ -85,16 +89,47 @@ select {
     display: none;
 }
 
+.formulaire,
+.btn-primary,
+.btn-secondary,
+.nav-admin-btn,
+.btn-modifier,
+.btn-supprimer,
+.btn-back,
+.ajout,
+.form-ajout-email,
+.form-ajout-password,
+.dropdown-user,
+.card,
+.camera,
+.fenetre-visio,
+.fenetre-chat,
+.chat-text,
+.chat-writting,
+.fenetre-participant,
+.inner-participant,
+.card-visio,
+.visio-container,
+.btn-visio,
+.visio-deconnexion,
+.card
+ {
+    border-radius: 0.625rem;
+}
 
+.chat-text,
+.chat-writting,
+.btn-chat-envoyer{
+    border-radius: 0.4rem;
+}
 /* Accueil====================================================== */
 .grid-accueil {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    color: #162D4E
 }
 
 .section-logo {
-    background-color: #00619E;
+    background-color: var(--color-blue);
     height: 100vh;
     clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
     overflow: hidden;
@@ -103,20 +138,17 @@ select {
 .div-logo {
     width: 80%;
     height: 90vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
-
-.citation-logo-accueil {
+blockquote{
     color: var(--main-color);
     margin-top: .5em;
     margin-left: 10rem;
-    font-size: 0.75rem;
+    font-size: calc(11*var(--res));
 }
 
 .nav-acceuil {
@@ -126,11 +158,11 @@ select {
 }
 
 .titre-accueil {
-    color: #162D4E;
-    margin-bottom: 0;
-    font-size: 2.8rem;
+    margin: 0 0 0;
+    font-size: calc(60*var(--res));
     font-weight: 600;
     font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+    width: fit-content;
 }
 
 .espace-accueil {
@@ -141,11 +173,10 @@ select {
 }
 
 .sous-titre-acceuil {
-    color: #162D4E;
-    font-size: 1.25rem;
+    font-size: calc(30*var(--res));
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+
     margin-top: 0;
 }
 
@@ -153,103 +184,7 @@ select {
     padding-top: 2rem;
 }
 
-@media (0px <=width <=600px) {
-
-
-    .grid-accueil {
-        display: block;
-        color: #162D4E;
-    }
-
-    .section-logo {
-        background-color: #00619E;
-        height: 60vh;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
-    }
-
-    .hidden-inlaptop {
-        display: block;
-        width: fit-content;
-        margin: .5em .5em .5em auto;
-    }
-
-    .btn-secondary {
-        width: fit-content;
-        padding: 0.5rem 1rem;
-        border: 0;
-        border-radius: 0.4rem;
-        text-decoration: none;
-        font-size: .5rem;
-
-        color: var(--main-color);
-        background-color: var(--color-turquoise);
-        box-shadow: none;
-        display: flex;
-        justify-content: flex-end;
-
-    }
-
-    .div-logo {
-        width: 100%;
-        height: 40vh;
-    }
-
-    .logo-accueil {
-        width: 90%;
-    }
-
-    .citation-logo-accueil {
-        margin: 1em auto;
-        width: fit-content;
-    }
-
-    .nav-acceuil {
-        display: none;
-    }
-
-    .espace-accueil {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 15em;
-        align-items: center;
-    }
-
-    .titre-accueil {
-        color: #162D4E;
-        margin: 1em .6em .2em .6em;
-        font-size: 1.5rem;
-        font-weight: 500;
-        font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
-    }
-
-    .sous-titre-acceuil {
-        color: #162D4E;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin: 0 1.3em;
-    }
-
-    .index-text {
-        display: none;
-    }
-
-    .div-btn {
-        padding-top: 2rem;
-    }
-
-    .btn-primary {
-        padding: 0.75rem 6.5rem;
-        margin: 0 .9em;
-    }
-
-
-}
-
 /* Admin connexion====================================================== */
-
 
 .form {
     list-style-type: none;
@@ -263,7 +198,6 @@ select {
 
 .formulaire {
     border: solid .5px #9AC3ED;
-    border-radius: 0.625rem;
     color: #2e5996;
     padding: .5rem 2.5rem .5rem 2.5rem;
     box-shadow: inset .02em .02em rgba(0, 97, 158, 0.25);
@@ -279,23 +213,6 @@ select {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-}
-
-@media (0px <=width <=600px) {
-    .form-admnin {
-        padding-top: .5rem;
-    }
-
-    .formulaire {
-        border-radius: 0.4rem;
-        padding: .5rem 1.5rem .5rem 1.5rem;
-        font-size: 1.25rem;
-        line-height: 1.25rem;
-    }
-
-    .form .formulaire::placeholder {
-        font-size: 1rem;
-    }
 }
 
 /* Administration ====================================================== */
@@ -334,7 +251,6 @@ select {
 .ajout {
     background-color: #46667B;
     width: fit-content;
-    border-radius: 0.625rem;
     padding: 1em 2em 1em 2em;
     margin: 0 0em 6em 2em;
 }
@@ -357,7 +273,6 @@ select {
 .form-ajout-email,
 .form-ajout-password {
     border: solid .5px #9AC3ED;
-    border-radius: 0.625rem;
     box-shadow: inset .02em .02em rgba(0, 97, 158, 0.25);
     color: #2e5996;
     padding: 0.75rem 2.5rem 0.75rem 2.5rem;
@@ -386,7 +301,6 @@ select {
     text-decoration: none;
     background-color: #FAFDFF;
     border: #FAFDFF;
-    border-radius: 0.625rem;
     padding: 0.75rem 1.5rem;
     font-size: 1.1rem;
     text-align: center;
@@ -404,49 +318,58 @@ main {
     margin: 0 2em 0 2em;
 }
 
-.section-card {
+/* .section-card {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2em;
+} */
+.section-card {
+    height: 100%;
+    width: 100%; 
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-template-rows: auto;
+    grid-gap: 2em;
+
+} 
+.colonne-admin{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
 }
 .double-colonne {
     display: grid;
     grid-template-columns: 48.5% 48.5%;
     grid-gap: 1em;
 }
+
 .card {
-    border-radius: 0.625rem;
+    width: 100%;
     padding: .1em 7em 1em 2em;
 }
 
 .card-admin {
     background-color: #46667B;
-    margin-bottom: 1em;
-    color: #FAFDFF;
-
+    color: var(--main-color);
 }
-
-.card-admin-admin {
-    height: fit-content;
-}
-
 .card-user {
     background-color: #D1E5F2;
     color: #46667B;
 }
 
+.card-admin-entete{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em ;
+}
+
 .card-email {
-    margin: 1em 0 0 0;
+    margin: 1 0 0 0;
     letter-spacing: 0.05em;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-}
-
-.btn-card {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
 }
 
 .date-status {
@@ -456,176 +379,44 @@ main {
     padding: 0 0 1em 0;
 }
 
-.status-admin {
+.status {
     margin: 0;
     padding: 0 2em 0 4em;
 }
 
-@media (0px <=width <=600px) {
-
-    .taille-logo {
-        width: 4em;
-        margin-left: .4em;
-    }
-
-    .ul-nav {
-        display: flex;
-        justify-content: flex-end;
-        list-style-type: none;
-        padding-top: 1.5em;
-        padding-right: .5em;
-    }
-
-    .nav-admin-user {
-        font-size: .6em;
-        padding: 0 1em 0 0;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .nav-admin-btn {
-        padding: 0.75rem;
-        border-radius: 0.4rem;
-        font-size: .5rem;
-    }
-
-    .ajout {
-        width: auto;
-        border-radius: 0.4rem;
-        padding: .5em;
-        margin: 0 .5em;
-    }
-
-    .new-user {
-        font-weight: 400;
-        font-size: 1em;
-    }
-
-    .form-ajout {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        list-style-type: none;
-    }
-
-    .form-ajout-email,
-    .form-ajout-password {
-        border-radius: .4rem;
-        padding: 0.75rem 8.5rem 0.75rem 0.75rem;
-        font-size: .5rem;
-        font-weight: 100;
-    }
-
-    .form-ajout-email::placeholder,
-    .form-ajout-password::placeholder {
-        font-size: 1rem;
-        font-weight: 300;
-        padding-left: .5em;
-    }
-
-    .form-item-1,
-    .form-item-2,
-    .form-item-3 {
-        margin: 0 1em;
-        padding: .2em 0;
-    }
-
-    .dropdown-user {
-        margin: 0.5em 0;
-        border-radius: .4rem;
-        padding: 0.5rem .5rem;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .btn-primary-sm {
-        padding: 0.5rem 5.5rem;
-        border-radius: .4rem;
-        font-size: 1rem;
-        margin: 0 .9em;
-    }
-    main {
-        margin: .5em;
-    }
-
-    .section-card {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .titre-admin,
-    .titre-user {
-        font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
-        font-size: .8rem;
-        font-weight: 200;
-    }
-
-    .double-colonne {
-        display: grid;
-        grid-template-columns: 1fr;
-
-    }
-
-    .card {
-        border-radius: 0.625rem;
-        width: 100%;
-        padding: 0 ;
-    }
-
-    .card-email {
-        padding: 1em 2em 0em 1.5em ;
-        font-weight: 500;
-        font-size: medium;
-        margin: 0;
-    }
-
-    .btn-card {
-        padding-left: 1.5em;
-    }
-    
-    .date-status {
-        list-style-type: none;
-        display: block flex;
-        padding: 0 0 .3em 1.5em;
-    }
-    
-    .status-admin {
-        margin: 0;
-        padding: 0 2em 0 4em;
-    }
-
-    .btn-modifier,
-.btn-supprimer {
-    padding: 0.75;
-    border-radius: 0.4rem;
-    font-size: .8rem;
-}
-
+.btn-card {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 
 /* User connexion ====================================================== */
 
-.logo-user {
-    width: 6em;
+.main-user-connexion {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .user-container {
+    width: fit-content;
     display: flex;
-    margin: 3em;
+    align-items: center;
 }
 
 .camera {
-    width: 40em;
+    width: 25em;
     height: 25em;
     background-color: #46667B;
-    margin-right: 4em;
-    border-radius: 0.625rem;
+    margin-right: 2em;
     ;
 }
 
 .user-content {
-    margin-top: 2em;
+    margin-bottom: 2em;
+    width: fit-content;
 }
 
 /* Visio-conférence ====================================================== */
@@ -646,37 +437,34 @@ main {
 }
 
 .fenetre-visio {
-    height: 36em;
+    height: 80vh;
     background-color: #46667B;
-    border-radius: 0.625rem;
 }
 
 .fenetre-chat {
     display: none;
-    /* margin: 0 33%; */
-    height: 36em;
+    height: 80vh;
     background-color: #46667B;
-    border-radius: 0.625rem;
 }
+
 
 .chat-text {
     background-color: #FAFDFF;
-    padding: 5em 2.5em 27em 2.5em;
+    height: 90%;
     margin: .5em;
-    border-radius: 0.625rem;
 }
 
 .chat-writting {
-    margin: 0 .5em .5em .5em;
-    padding: .5em 2em;
-    border-radius: 0.625rem;
+    margin: 0 .3em 0 .5em;
+    padding: .45em 1em;
+    width: 67%;
     border: none;
     font-size: large;
 }
 
 .btn-chat-envoyer {
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.625rem;
+    padding: 0.5rem 1rem;
+    width: 26%;
     color: var(--main-color);
     background-color: var(--color-turquoise);
     font-size: large;
@@ -684,26 +472,25 @@ main {
 
 .fenetre-participant {
     display: none;
-    height: 36em;
+    height: 80vh;
     background-color: #46667B;
-    border-radius: 0.625rem;
 }
 
 .inner-participant {
     background-color: #FAFDFF;
     padding: 1em 1em 1em 0em;
     margin: .5em;
-    border-radius: 0.625rem;
     overflow: auto;
-    height: 33em;
+    height: 97%;
     color: #0D3A69;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
+    
 }
 
 .card-visio {
-    border-radius: 0.625rem;
     background-color: #D1E5F2;
     width: 10em;
     height: 8.5em;
@@ -723,8 +510,8 @@ main {
 .visio-person {
     height: 7em;
     background-color: #9AC3ED;
-    margin-left: 0.5;
-    margin-right: 0.5;
+    margin-left: .5;
+    margin-right: .5;
     border-radius: 0.625rem 0.625rem 0 0;
 }
 
@@ -741,7 +528,6 @@ main {
     justify-items: center;
     gap: 0;
     background-color: #46667B;
-    border-radius: 0.625rem;
 }
 
 .font-semibold {
@@ -766,13 +552,13 @@ main {
     color: var(--main-color);
     cursor: pointer;
     background: #46667B;
-    border-radius: 0.625rem;
 
 }
 
 @media (hover: hover) {
     .btn-visio:hover {
         background: #7290a5;
+        border-radius: 0.625rem;
     }
 }
 
@@ -815,7 +601,6 @@ main {
     text-decoration: none;
     color: var(--main-color);
     background-color: var(--color-red);
-    border-radius: 0.625rem;
     padding: 0.75rem;
     margin-top: auto;
     text-align: center
@@ -880,10 +665,8 @@ main {
 }
 
 .close-modal {
-    /* padding: 8px 10px; */
     border: none;
-    /* border-radius: 5px; */
-    /* font-size: 18px; */
+
     position: absolute;
     top: 10px;
     right: 10px;
@@ -904,11 +687,366 @@ main {
     line-height: 1.4;
     margin-bottom: 1em;
 }
+
+/* MODAL */
 @media (0px <=width <=600px) {
     .modal {
         width: 80%;
     }
-    .espaceur-mdp{
+
+    .espaceur-mdp {
         margin-bottom: 1em;
     }
+}
+
+/* ACCUEIL */
+@media (0px <=width <=600px) {
+
+
+    .grid-accueil {
+        display: block;
+        color: #162D4E;
+    }
+
+    .section-logo {
+        background-color: #00619E;
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+    }
+
+    .hidden-inlaptop {
+        display: block;
+        width: fit-content;
+        margin: .5em .5em .5em auto;
+    }
+
+    .btn-secondary {
+        width: fit-content;
+        padding: 0.5rem 1rem;
+        border: 0;
+        border-radius: 0.4rem;
+        text-decoration: none;
+        font-size: .5rem;
+
+        color: var(--main-color);
+        background-color: var(--color-turquoise);
+        box-shadow: none;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .div-logo {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .logo-accueil {
+        width: 90%;
+    }
+
+    blockquote {
+        margin: 1em auto;
+        width: fit-content;
+    }
+
+    .nav-acceuil {
+        display: none;
+    }
+
+    .espace-accueil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 15em;
+        align-items: center;
+    }
+
+    .titre-accueil {
+        color: #162D4E;
+        margin: 1em .6em .2em .6em;
+        font-weight: 500;
+        font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+    }
+
+    .sous-titre-acceuil {
+        color: #162D4E;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 1.3em;
+    }
+
+    .index-text {
+        display: none;
+    }
+
+    .div-btn {
+        padding-top: 2rem;
+    }
+
+    .btn-primary {
+        padding: 0.75rem 6.5rem;
+        margin: 0 .9em;
+    }
+}
+
+/* ADMIN CONNEXION */
+@media (0px <=width <=600px) {
+    .form-admnin {
+        padding-top: .5rem;
+    }
+
+    .formulaire {
+        border-radius: 0.4rem;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+    }
+
+    .form .formulaire::placeholder {
+        font-size: 1rem;
+    }
+}
+
+/* ADMINISTRATION */
+@media (0px <=width <=600px) {
+    .hidden-insmartphone {
+        display: none;
+    }
+
+    .taille-logo {
+        width: 4em;
+        margin-left: .4em;
+    }
+
+    .ul-nav {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        padding-top: 1.5em;
+        padding-right: .5em;
+    }
+
+    .nav-admin-user {
+        font-size: .6em;
+        padding: 0 1em 0 0;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .nav-admin-btn {
+        padding: 0.75rem;
+        border-radius: 0.4rem;
+        font-size: .5rem;
+    }
+
+    .ajout {
+        width: auto;
+        border-radius: 0.4rem;
+        color: #00619E;
+        padding: .5em;
+        margin: 0 .5em;
+    }
+
+    .new-user {
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    .form-ajout {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .form-ajout-email,
+    .form-ajout-password {
+        border-radius: .4rem;
+        padding: 0.5rem 40% 0.5rem 0.5rem;
+        font-size: .5rem;
+        font-weight: 100;
+    }
+
+    .form-ajout-email::placeholder,
+    .form-ajout-password::placeholder {
+        font-size: 1rem;
+        font-weight: 300;
+        padding-left: .5em;
+    }
+
+    .form-item-1,
+    .form-item-2,
+    .form-item-3 {
+        margin: 0 1em;
+        padding: .2em 0;
+    }
+
+    .dropdown-user {
+        margin: 0.5em 0;
+        border-radius: .4rem;
+        padding: 0.5rem .5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .btn-primary-sm {
+        padding: 0.5rem 5.5rem;
+        border-radius: .4rem;
+        font-size: 1rem;
+        margin: 0 .9em;
+    }
+
+    main {
+        margin: .5em;
+    }
+
+    .section-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titre-admin,
+    .titre-user {
+        font-family: 'BespokeStencil-Regular', 'Roboto', sans-serif;
+        font-size: .8rem;
+        font-weight: 200;
+    }
+
+    .double-colonne {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .card {
+        width: 100%;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .card-email {
+        padding: 1em 2em 0em 1.5em;
+        font-weight: 500;
+        font-size: medium;
+        margin: 0;
+    }
+
+    .btn-card {
+        padding-left: 1.5em;
+    }
+
+    .date-status {
+        list-style-type: none;
+        display: block flex;
+        padding: 0 0 .3em 1.5em;
+    }
+
+    .status-admin {
+        margin: 0;
+        padding: 0 2em 0 4em;
+    }
+
+    .btn-modifier,
+    .btn-supprimer {
+        padding: 0.75;
+        border-radius: 0.4rem;
+        font-size: .8rem;
+    }
+
+}
+
+/* USER CONNEXION */
+@media (0px <=width <=600px) {
+
+    .main-user-connexion {
+        height: 60vh;
+        display: flex;
+        padding: 2em;
+
+    }
+
+    .user-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .camera {
+        min-width: 300px;
+        width: auto;
+        height: 15em;
+        margin-right: 0;
+    }
+
+    .user-content {
+        margin-bottom: 2em;
+        width: fit-content;
+    }
+
+    .ajustement {
+        margin: 0 1em;
+    }
+}
+
+/* VISIO */
+@media (0px <=width <=600px) {
+
+    .petit-logo {
+        width: 1em;
+    }
+
+    .fenetre {
+        margin: 0 1em;
+    }
+
+    .fenetre-visio {
+        height: 80vh;
+
+    }
+
+    .fenetre-chat,
+    .visio-hide,
+    .visio-text {
+        display: none;
+    }
+
+    .visio-nav {
+        margin: .1em 1em;
+        height: 12vh;
+    }
+
+    .visio-container {
+
+        display: flex;
+        justify-content: space-around;
+        padding-left: .4em;
+    }
+
+    .visio-deconnexion {
+        font-size: small;
+    }
+
+    .visio {
+        list-style: none;
+    }
+
+    .btn-visio {
+        margin: 0.3em 0 0 0;
+        padding: .8rem;
+        color: var(--main-color);
+
+    }
+
+    .deconnexion {
+        padding: 1.2em .75em;
+    }
+
+    .visio-deconnexion {
+        padding: 0.75rem;
+
+    }
+
 }
